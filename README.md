@@ -1,6 +1,3 @@
-# Hyprland-config-for-AZERTY-layout
-A Hyprland dotfile made for AZERTY keyboard users
-
 Work in progress 
 
 A config I originally made in order to backup and restore my Hyprland config easily, made for AZERTY keyboard users.
