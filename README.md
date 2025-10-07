@@ -17,4 +17,4 @@ If you want the latest commit :
 
 git clone https://github.com/Susheate/Hyprland-config-for-AZERTY-layout.git && cd Hyprland-config-for-AZERTY-layout && sh install.sh
 
-If you want a stable version use the releases
+If you want a stable version, use the releases.
