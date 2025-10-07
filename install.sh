@@ -5,7 +5,7 @@ echo "Installing packages"
 sudo pacman -S --needed --noconfirm zsh git base-devel curl fastfetch starship hyprland waybar brightnessctl pavucontrol nwg-displays kitty ttf-fira-code otf-font-awesome dolphin uwsm xdg-desktop-portal-hyprland xdg-desktop-portal
 
 
-echo "Changing shell to ZSH"
+echo "Changing shell to Zsh"
 sudo chsh -s /bin/zsh
 
 
