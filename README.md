@@ -1,6 +1,7 @@
 # Hyprland-config-for-AZERTY-layout
 A Hyprland dotfile made for AZERTY keyboard users
 
+Work in progress 
 
 A config I originally made in order to backup and restore my Hyprland config easily, made for AZERTY keyboard users.
 
@@ -11,12 +12,12 @@ Cut in two scripts :
 - extra-packages.sh :
   Installs the packages I need
 
-Installation :
+# Installation :
 
-If you want the latest commit :
+If you want the latest version :
 
 ```bash
 git clone https://github.com/Susheate/Hyprland-config-for-AZERTY-layout.git && cd Hyprland-config-for-AZERTY-layout && sh install.sh
 ```
 
-If you want a stable version, use the releases.
+If you want a fully tested version, use the releases.
