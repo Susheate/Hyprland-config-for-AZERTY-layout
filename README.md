@@ -9,7 +9,7 @@ Cut in two scripts :
   Setups hyprland and zsh
 
 - extra-packages.sh :
-  Installs the packages I need
+  Installs additional packages
 
 # Installation :
 
