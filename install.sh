@@ -10,11 +10,11 @@ chsh -s /bin/zsh
 
 
 echo "Copying hyprland.conf"
-cp -rf hypr/hyprland.conf ~/.config/hypr
+cp -rf hypr/hyprland.conf ~/.config/hypr/hyprland.conf
 
 
 echo "Copying waybar.jsonc"
-cp -rf waybar/config.jsonc ~/.config/waybar
+cp -rf waybar/config.jsonc ~/.config/waybar/config.jsonc
 
 
 echo "Installing Oh My Zsh"
@@ -24,7 +24,7 @@ fi
 
 
 echo "Copying .zshrc"
-cp -rf zsh/.zshrc ~/.config
+cp -rf zsh/.zshrc ~/.config/zshrc
 
 
 echo "Installing yay"
