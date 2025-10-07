@@ -13,7 +13,7 @@ Cut in two scripts :
 
 Installation :
 
-If you want the latest commit :
+If you want the latest commit
 
 git clone https://github.com/Susheate/Hyprland-config-for-AZERTY-layout.git && cd Hyprland-config-for-AZERTY-layout && sh install.sh
 
