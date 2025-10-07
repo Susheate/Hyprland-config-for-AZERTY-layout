@@ -2,9 +2,15 @@
 
 Work in progress 
 
-A config I originally made in order to backup and restore my Hyprland config easily, made for AZERTY keyboard users.
+A repository I originally made in order to backup and restore my Hyprland config easily, made for AZERTY keyboard users.
 
-Cut in two scripts :
+It offers :
+- Keybindings made for AZERTY
+- Zsh config
+- Waybar config
+- Already configured hyprland.conf
+
+The config is cut in two scripts :
 - install.sh :
   Setups hyprland and zsh
 
