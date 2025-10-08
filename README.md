@@ -6,17 +6,12 @@ A repository I originally made in order to backup and restore my Hyprland config
 
 It offers :
 - Keybindings made for AZERTY
-- Zsh config
+- Zsh config (Oh My Zsh, Starship)
 - Waybar config
-- Already configured hyprland.conf
+- Already configured hyprland.conf (Custom keybindings, display resolution...)
 - Fix for OBS on Hyprland
 
-The config is cut in two scripts :
-- install.sh :
-  Setups hyprland and zsh
-
-- extra-packages.sh :
-  Installs additional packages
+This collection of config files is meant to be used as it is or as a base for a further configuration.
 
 # Installation :
 
