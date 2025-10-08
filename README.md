@@ -9,6 +9,7 @@ It offers :
 - Zsh config
 - Waybar config
 - Already configured hyprland.conf
+- Fix for OBS on Hyprland
 
 The config is cut in two scripts :
 - install.sh :
