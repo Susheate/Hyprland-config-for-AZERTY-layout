@@ -11,7 +11,7 @@ It offers :
 - Already configured hyprland.conf (Custom keybindings, display resolution...)
 - Fix for OBS on Hyprland
 
-This collection of config files is meant to be used as it is or as a base for a further configuration.
+This collection of config files is meant to be used as it is or as a base for further configuration.
 
 # Installation :
 
