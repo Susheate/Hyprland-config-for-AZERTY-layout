@@ -60,3 +60,14 @@ SUPER + S : Open scratchpad
 SUPER + SHIFT + S : Move window and open scratchpad
 SUPER + M1 : Move window
 SUPER + M2 : Resize window
+
+### Scripts :
+
+install.sh :
+
+install.sh installs a set of packages that you can check by reading the script. It setups Zsh, Oh My Zsh, fastfetch, Hyprland, waybar and the yay AUR helper.
+
+
+extra-packages.sh :
+
+extra-packages.sh installs a set of useful packages, not needed for the configs.
