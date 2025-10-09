@@ -6,25 +6,28 @@ sudo pacman -S --needed --noconfirm zsh git base-devel curl fastfetch starship h
 
 
 echo 'Changing shell to Zsh'
-sudo chsh -s /bin/zsh
+chsh -s /bin/zsh
 
-echo 'Copying the fastfetch config'
-cp -rf fastfetch/config.jsonc ~/.config/fastfetch
+echo 'Copying fastfetch config'
+cp -rf fastfetch ~/.config
+
 
 echo 'Copying hyprland.conf'
-cp -rf hypr/hyprland.conf ~/.config/hypr
+cp -rf hypr ~/.config
 
 
-echo 'Copying the waybar config'
-cp -rf waybar/config.jsonc ~/.config/waybar
+echo 'Copying waybar config'
+cp -rf waybar ~/.config
 
 
 echo 'Installing Oh My Zsh'
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [[ ! -d "$HOME/.oh-my-zsh" ]]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+fi
 
 
 echo 'Copying .zshrc'
-cp -rf zsh/.zshrc ~/.config
+cp -rf zsh/.zshrc ~/.config/.zshrc
 
 
 echo 'Installing yay'
