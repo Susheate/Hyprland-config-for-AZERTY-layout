@@ -42,6 +42,10 @@ SUPER + R : Open application selection menu (wofi by default)
 
 SUPER + P : Toggle resizable window
 
+SUPER + J : Toggle split
+
+SUPER + B : Open browser (zen-browser-bin by default)
+
 SUPER + F : Maximize active window
 
 SUPER + X : Resize active window
