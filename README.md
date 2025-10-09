@@ -61,8 +61,11 @@ SUPER + SHIFT + &-à : Move active window and view to workspace 1-10
 SUPER + Scroll : Scroll through existing workspaces
 
 SUPER + S : Open scratchpad
+
 SUPER + SHIFT + S : Move window and open scratchpad
+
 SUPER + M1 : Move window
+
 SUPER + M2 : Resize window
 
 ### Scripts :
