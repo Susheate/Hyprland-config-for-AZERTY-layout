@@ -14,7 +14,7 @@ It offers :
 
 This collection of config files can be used as it is or as a base for further configuration.
 
-# Installation :
+## Installation :
 
 If you want the latest version :
 
@@ -23,3 +23,26 @@ git clone https://github.com/Susheate/Hyprland-config-for-AZERTY-layout.git && c
 ```
 
 If you want a fully tested version, use the releases.
+
+## Documentation :
+
+### Keybindings :
+
+SUPER + T : Open terminal (kitty by default)
+SUPER + Q : Kill active window
+SUPER + M : Exit Hyprland
+SUPER + E : Open file manager (dolphin by default)
+SUPER + W : Toggle floating active window
+SUPER + R : Open application selection menu (wofi by default)
+SUPER + P : Toggle resizable window
+SUPER + F : Maximize active window
+SUPER + X : Resize active window
+SHIFT + F11 : Fullscreen active window
+SUPER + Arrows : Change focus
+SUPER + &-à : Move view to workspace 1-10
+SUPER + SHIFT + &-à : Move active window and view to workspace 1-10
+SUPER + Scroll : Scroll through existing workspaces
+SUPER + S : Open scratchpad
+SUPER + SHIFT + S : Move window and open scratchpad
+SUPER + M1 : Move window
+SUPER + M2 : Resize window
