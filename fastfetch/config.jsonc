@@ -1,0 +1,124 @@
+/*
+HyDE provides xdg/share/fastfetch/presets/hyde/*.config.jsonc files for different layouts. 
+You can also create your own config.jsonc file in the same directory to create a custom theme. 
+
+To test HyDE's fastfetch theme, run:
+fastfetch --config hyde/*.jsonc
+
+*/
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "height": 18
+  },
+  "display": {
+    "separator": " : "
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "{6} {7} {8}",
+    },
+    {
+      "type": "custom",
+      "format": "┌──────────────────────────────────────────┐"
+    },
+    {
+      "type": "chassis",
+      "key": "  Chassis",
+      "format": "{1} {2} {3}",
+    },
+    {
+      "type": "os",
+      "key": "  OS",
+      "format": "{2}",
+    },
+    {
+      "type": "kernel",
+      "key": "  Kernel",
+      "format": "{2}",
+    },
+    {
+      "type": "init",
+      "key": "  Init",
+      "format": "{2}",
+    },
+    {
+      "type": "Shell",
+      "key": "  Shell",
+      "format": "{2}",
+    },
+    {
+      "type": "packages",
+      "key": "  Packages",
+    },
+    {
+      "type": "font",
+      "key": "  Font",
+      "format": "{2}",
+    },
+    {
+      "type": "terminalfont",
+      "key": "  Terminal Font",
+      "format": "{2}",
+    },
+    {
+      "type": "display",
+      "key": "  Display",
+      "format": "{1}x{2} @ {3}Hz [{7}]",
+    },
+    {
+      "type": "terminal",
+      "key": "  Terminal",
+    },
+    {
+      "type": "de",
+      "key": "  DE",
+      "format": "{2}",
+    },
+    {
+      "type": "wm",
+      "key": "  WM",
+      "format": "{2}",
+    },
+    {
+      "type": "cpu",
+      "format": "{1} @ {7}",
+      "key": "  CPU",
+    },
+    {
+      "type": "gpu",
+      "format": "{1} {2}",
+      "key": "  GPU",
+    },
+    {
+      "type": "gpu",
+      "format": "{3}",
+      "key": "  GPU Driver",
+    },
+    {
+      "type": "memory",
+      "key": "  Memory ",
+    },
+    {
+      "type": "disk",
+      "key": "  OS Age ",
+      "folders": "/",
+      "format": "{days} days"
+    },
+    {
+      "type": "uptime",
+      "key": "  Uptime ",
+    },
+    {
+      "type": "custom",
+      "format": "└──────────────────────────────────────────┘"
+    },
+    {
+      "type": "colors",
+      "paddingLeft": 2,
+      "symbol": "circle"
+    },
+    "break"
+  ]
+}
