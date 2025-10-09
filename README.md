@@ -7,6 +7,7 @@ A repository I originally made in order to backup and restore my Hyprland config
 It offers :
 - Keybindings made for AZERTY
 - Zsh config (Oh My Zsh, Starship)
+- Fastfetch config
 - Waybar config
 - Already configured hyprland.conf (Custom keybindings, display resolution...)
 - Fix for OBS on Hyprland
