@@ -4,7 +4,7 @@ echo 'Updating system'
 sudo pacman -Syu
 
 echo 'Installing packages'
-sudo pacman -S --needed --noconfirm zsh git base-devel curl fastfetch starship hyprland waybar brightnessctl pavucontrol nwg-displays kitty ttf-fira-code otf-font-awesome dolphin uwsm xdg-desktop-portal-hyprland xdg-desktop-portal dolphin playerctl
+sudo pacman -S --needed --noconfirm zsh git base-devel curl fastfetch starship hyprland waybar brightnessctl pavucontrol nwg-displays kitty ttf-fira-code otf-font-awesome dolphin uwsm xdg-desktop-portal-hyprland xdg-desktop-portal dolphin playerctl satty
 
 
 echo 'Changing shell to Zsh'
@@ -39,7 +39,7 @@ makepkg -si
 
 
 echo 'Installing AUR packages, check PKGBUILD'
-yay -S --needed zen-browser-bin
+yay -S --needed zen-browser-bin hyprshot-git
 
 
 echo 'Installation complete'
