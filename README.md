@@ -10,6 +10,7 @@ It offers :
 - Fastfetch config
 - Waybar config
 - Already configured hyprland.conf (Custom keybindings, display resolution...)
+- Screenshot utility (hyprshot-git)
 - Fix for OBS on Hyprland
 
 This collection of config files can be used as it is or as a base for further configuration.
@@ -40,7 +41,7 @@ SUPER + W : Toggle floating active window
 
 SUPER + R : Open application selection menu (wofi by default)
 
-SUPER + P : Toggle resizable window
+SUPER + SHIFT + W : Toggle resizable window
 
 SUPER + J : Toggle split
 
@@ -58,6 +59,8 @@ SUPER + &-à : Move view to workspace 1-10
 
 SUPER + SHIFT + &-à : Move active window and view to workspace 1-10
 
+SUPER + Alt + &-à : Move active window to workspace 1-10
+
 SUPER + Scroll : Scroll through existing workspaces
 
 SUPER + S : Open scratchpad
@@ -67,6 +70,16 @@ SUPER + SHIFT + S : Move window and open scratchpad
 SUPER + M1 : Move window
 
 SUPER + M2 : Resize window
+
+SUPER + P : Freeze screen and screenshot selected window
+
+SUPER + SHIFT + P : Screenshot selected window
+
+SUPER + Alt + P : Freeze screen and screenshot selected region
+
+SUPER + SHIFT + Alt + P : Screenshot selected region
+
+PRINT : Screenshot selected display
 
 ### Scripts :
 
