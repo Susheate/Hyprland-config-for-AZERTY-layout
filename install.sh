@@ -29,7 +29,7 @@ fi
 
 
 echo 'Copying .zshrc'
-cp -rf zsh/.zshrc ~/.config/.zshrc
+cp -rf zsh/.zshrc ~/.zshrc
 
 
 echo 'Installing yay'
