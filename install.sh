@@ -4,7 +4,7 @@ echo 'Updating system'
 sudo pacman -Syu
 
 echo 'Installing packages'
-sudo pacman -S --needed --noconfirm zsh git base-devel curl fastfetch starship hyprland waybar brightnessctl pavucontrol nwg-displays kitty ttf-fira-code otf-font-awesome dolphin uwsm xdg-desktop-portal-hyprland xdg-desktop-portal dolphin playerctl wofi
+sudo pacman -S --needed --noconfirm zsh git base-devel curl fastfetch starship hyprland waybar brightnessctl pavucontrol nwg-displays kitty ttf-fira-code otf-font-awesome dolphin uwsm xdg-desktop-portal-hyprland xdg-desktop-portal dolphin playerctl wofi archlinux-xdg-menu
 
 
 echo 'Changing shell to Zsh'
