@@ -2,7 +2,8 @@
 
 
 echo 'Installing packages'
-yay -S --needed --noconfirm steam wine lutris prismlauncher wine-mono flatpak kdeconnect plasma tlp ufw ly qalculate-qt code micro obsidian btop obs-studio filelight
+yay -Sy --needed --noconfirm wine lutris prismlauncher wine-mono flatpak kdeconnect plasma tlp ufw ly qalculate-qt code micro obsidian btop obs-studio filelight
+yay -S steam
 
 
 echo 'Enabling services (systemd)'
