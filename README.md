@@ -87,6 +87,8 @@ install.sh :
 
 install.sh installs a set of packages that you can check by reading the script. It setups Zsh, Oh My Zsh, fastfetch, Hyprland, waybar and the yay AUR helper.
 
+The fastfetch config was based off HyDE's fastfetch config.
+
 
 extra-packages.sh :
 
