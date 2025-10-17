@@ -5,26 +5,24 @@
   "spacing" : 0,
   "modules-left": [
   "hyprland/workspaces",
-  "custom/uptime",
   "cpu"
   ],
 
   "modules-center": ["clock"],
 
   "modules-right": [
-    "custom/pomodoro",
     "bluetooth",
     "network",
     "pulseaudio", 
     "backlight",
-    "battery",
+    "battery"
   ],
 
   "hyprland/workspaces": {
     "format": "{name}: {icon}",
     "format-icons": {
-      "active": "",
-      "default": ""
+      "active": "",
+      "default": ""
     }
   },
 
@@ -66,7 +64,6 @@
     "interval": 5,
     "tooltip-format": "{essid} ({signalStrength}%)",
     "on-click": "nm-connection-editor"
-
  },
 
   "cpu": {
@@ -119,15 +116,8 @@
   "tooltip": false,
   "on-click": "sh -c '(sleep 0s; hyprlock)' & disown",
   "format" : ""
-  },
+  }
 
-  "custom/pomodoro": {
-	"format": "{}",
-	"return-type": "json",
-	"exec": "waybar-module-pomodoro --no-work-icons",
-	"on-click": "waybar-module-pomodoro toggle",
-	"on-click-right": "waybar-module-pomodoro reset",
-  },
 
 }
 
