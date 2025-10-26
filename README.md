@@ -78,7 +78,9 @@ SUPER + Alt + P : Freeze screen and screenshot selected region
 
 SUPER + SHIFT + Alt + P : Screenshot selected region
 
-PRINT : Screenshot selected display
+PRINT : Freeze and screenshot selected display
+
+SHIFT + PRINT : Screenshot selected display
 
 ### Scripts :
 
