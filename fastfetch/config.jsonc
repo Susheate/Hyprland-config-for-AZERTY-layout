@@ -9,7 +9,7 @@
   "modules": [
     {
       "type": "title",
-      "format": "{6} {7} {8}",
+      "format": "{6} {7} {8}"
     },
     {
       "type": "custom",
@@ -18,79 +18,71 @@
     {
       "type": "chassis",
       "key": "  Chassis",
-      "format": "{1} {2} {3}",
+      "format": "{1} {2} {3}"
     },
     {
       "type": "os",
-      "key": "  OS",
-      "format": "{2}",
+      "key": "  OS"
     },
     {
       "type": "kernel",
-      "key": "  Kernel",
-      "format": "{2}",
+      "key": "  Kernel"
     },
     {
-      "type": "init",
-      "key": "  Init",
-      "format": "{2}",
+      "type": "initsystem",
+      "key": "  Init"
     },
     {
       "type": "Shell",
       "key": "  Shell",
-      "format": "{2}",
+      "format": "{2}"
     },
     {
       "type": "packages",
-      "key": "  Packages",
+      "key": "  Packages"
     },
     {
       "type": "font",
       "key": "  Font",
-      "format": "{2}",
+      "format": "{2}"
     },
     {
       "type": "terminalfont",
-      "key": "  Terminal Font",
-      "format": "{2}",
+      "key": "  Terminal Font"
     },
     {
       "type": "display",
       "key": "  Display",
-      "format": "{1}x{2} @ {3}Hz [{7}]",
+      "format": "{1}x{2} {3}Hz [{7}]"
     },
     {
       "type": "terminal",
-      "key": "  Terminal",
+      "key": "  Terminal"
     },
     {
       "type": "de",
-      "key": "  DE",
-      "format": "{2}",
+      "key": "  DE"
     },
     {
       "type": "wm",
-      "key": "  WM",
-      "format": "{2}",
+      "key": "  WM"
     },
     {
       "type": "cpu",
-      "format": "{1} @ {7}",
-      "key": "  CPU",
+      "key": "  CPU"
     },
     {
       "type": "gpu",
-      "format": "{1} {2}",
-      "key": "  GPU",
+      "key": "  GPU"
     },
     {
       "type": "gpu",
-      "format": "{3}",
       "key": "  GPU Driver",
+      "format": "{3}"
     },
     {
       "type": "memory",
-      "key": "  Memory ",
+      "key": "  Memory "
     },
     {
       "type": "disk",
@@ -100,7 +92,7 @@
     },
     {
       "type": "uptime",
-      "key": "  Uptime ",
+      "key": "  Uptime "
     },
     {
       "type": "custom",
