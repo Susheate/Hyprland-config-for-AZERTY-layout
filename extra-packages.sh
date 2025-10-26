@@ -1,20 +1,21 @@
 #!/bin/bash
 
 
-echo 'Installing packages'
-yay -Sy --needed --noconfirm wine lutris prismlauncher wine-mono flatpak kdeconnect plasma tlp ufw ly qalculate-qt code micro obsidian btop obs-studio filelight
-yay -S steam steam-native-runtime
+echo 'Installing packages and updating system'
 
+if [ -d /bedrock/strata/arch ] && [ -d /bedrock/strata/artix ]; then
+	echo 'Bedrock Linux detected, artix and arch strata found'
+	sudo pacman -Syu --needed wine lutris prismlauncher flatpak kdeconnect plasma ufw ly qalculate-qt micro btop obs-studio filelight steam
+	sudo strat -r arch pacman -Syu --needed obsidian code wine-mono
 
-echo 'Enabling services (systemd)'
-sudo systemctl enable tlp && sudo systemctl enable ufw
+else
+	pacman -Syu --needed wine lutris prismlauncher wine-mono flatpak kdeconnect plasma ufw ly qalculate-qt code micro obsidian btop obs-studio filelight steam
 
-
-echo 'Installing AUR packages, check PKGBUILD'
-yay -S --needed librewolf-bin
+fi
 
 
 echo 'Installing Flatpaks'
+
 flatpak install org.vinegarhq.Sober org.vinegarhq.Vinegar com.heroicgameslauncher.hgl
 flatpak override --user --filesystem=xdg-run/app/com.discordapp.Discord:create --filesystem=xdg-run/discord-ipc-0 --device=input org.vinegarhq.Sober
 
