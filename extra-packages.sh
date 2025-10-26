@@ -6,10 +6,10 @@ echo 'Installing packages and updating system'
 if [ -d /bedrock/strata/arch ] && [ -d /bedrock/strata/artix ]; then
 	echo 'Bedrock Linux detected, artix and arch strata found'
 	sudo pacman -Syu --needed wine lutris prismlauncher flatpak kdeconnect plasma ufw ly qalculate-qt micro btop obs-studio filelight steam
-	sudo strat -r arch pacman -Syu --needed obsidian code wine-mono
+	sudo strat -r arch pacman -Syu --needed obsidian code
 
 else
-	pacman -Syu --needed wine lutris prismlauncher wine-mono flatpak kdeconnect plasma ufw ly qalculate-qt code micro obsidian btop obs-studio filelight steam
+	pacman -Syu --needed lutris prismlauncher wine-mono flatpak kdeconnect plasma ufw ly qalculate-qt code micro obsidian btop obs-studio filelight steam
 
 fi
 
