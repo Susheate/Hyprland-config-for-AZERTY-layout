@@ -15,14 +15,13 @@ It offers :
 
 This collection of config files can be used as it is or as a base for further configuration.
 
-## Installation :
+## Installing/Updating :
 
-If you want the latest version :
-
+If you wish to use the latest version :
 ```bash
 git clone https://github.com/Susheate/Hyprland-config-for-AZERTY-layout.git && cd Hyprland-config-for-AZERTY-layout && sh install.sh
 ```
-
+# Using this command will replace your current configuration files!
 If you want a fully tested version, use the releases.
 
 ## Documentation :
