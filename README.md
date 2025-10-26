@@ -1,6 +1,6 @@
 # Hyprland config for AZERTY/French layouts
 
-Work in progress 
+Work in progress, check the repo to run the install script again in order to keep your config updated
 
 A repository I originally made in order to backup and restore my Hyprland config easily, made for AZERTY/French keyboard users.
 
