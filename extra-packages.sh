@@ -1,23 +1,30 @@
 #!/bin/bash
 
 
-echo 'Installing packages and updating system'
+clear="\e[0m"
+bold="\e[1m"
+green="\e[32m"
+cyan="\e[36m"
+magenta="\e[35m"
+
+
+echo -e "${bold}Installing packages and updating system${clear}"
 
 if [ -d /bedrock/strata/arch ] && [ -d /bedrock/strata/artix ]; then
-	echo 'Bedrock Linux detected, artix and arch strata found'
-	sudo pacman -Syu --needed wine lutris prismlauncher flatpak kdeconnect plasma ufw ly qalculate-qt micro btop obs-studio filelight steam
+	echo -e "${green}Bedrock Linux${clear} detected, ${cyan}artix${bold}${clear} and ${cyan}arch ${magenta}strata${clear} found"
+	sudo pacman -Syu --needed wine lutris prismlauncher flatpak plasma ufw ly qalculate-qt micro btop obs-studio filelight steam
 	sudo strat -r arch pacman -Syu --needed obsidian code
 
 else
-	pacman -Syu --needed lutris prismlauncher wine-mono flatpak kdeconnect plasma ufw ly qalculate-qt code micro obsidian btop obs-studio filelight steam
+	pacman -Syu --needed lutris prismlauncher wine-mono flatpak plasma ufw ly qalculate-qt code micro obsidian btop obs-studio filelight steam
 
 fi
 
 
-echo 'Installing Flatpaks'
+echo -e "${bold}Installing Flatpaks${clear}"
 
 flatpak install org.vinegarhq.Sober org.vinegarhq.Vinegar com.heroicgameslauncher.hgl
 flatpak override --user --filesystem=xdg-run/app/com.discordapp.Discord:create --filesystem=xdg-run/discord-ipc-0 --device=input org.vinegarhq.Sober
 
 
-echo 'Installation complete'
+echo -e "${bold}Installation complete${clear}"
