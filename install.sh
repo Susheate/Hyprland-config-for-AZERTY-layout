@@ -10,7 +10,7 @@ magenta="\e[35m"
 
 echo -e "${bold}Installing packages and updating system${clear}"
 if [ -d /bedrock/strata/arch ] && [ -d /bedrock/strata/artix ]; then
-	echo -e "${green}Bedrock Linux${clear} detected, ${cyan}artix${bold}${clear} and ${cyan}arch ${magenta}strata${clear} found"
+	echo -e "${green}Bedrock Linux${clear} detected, ${cyan}artix${clear} and ${cyan}arch ${magenta}strata${clear} found"
 	sudo pacman -Syu --needed zsh git base-devel curl fastfetch starship hyprland waybar brightnessctl pavucontrol kitty ttf-firacode-nerd dolphin xdg-desktop-portal-hyprland xdg-desktop-portal playerctl wofi hyprpaper blueman
 	sudo strat -r arch pacman -Syu --needed nwg-displays nwg-look
 
