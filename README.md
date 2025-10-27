@@ -23,6 +23,7 @@ git clone https://github.com/Susheate/Hyprland-config-for-AZERTY-layout.git && c
 ```
 ### Using this command will replace your current configuration files!
 After installing, you may want to configure your screen in nwg-displays alias Display Settings app (SUPER + R then search for Display Settings)
+
 If you want a fully tested version, use the releases.
 
 ## Documentation :
