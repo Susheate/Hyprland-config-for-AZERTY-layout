@@ -6,10 +6,10 @@ echo 'Installing packages and updating system'
 if [ -d /bedrock/strata/arch ] && [ -d /bedrock/strata/artix ]; then
 	echo 'Bedrock Linux detected, artix and arch strata found'
 	sudo pacman -Syu --needed zsh git base-devel curl fastfetch starship hyprland waybar brightnessctl pavucontrol kitty ttf-firacode-nerd dolphin xdg-desktop-portal-hyprland xdg-desktop-portal playerctl wofi hyprpaper blueman
-	sudo strat -r arch pacman -Syu --needed nwg-displays
+	sudo strat -r arch pacman -Syu --needed nwg-displays nwg-look
 
 else
-	sudo pacman -Syu --needed zsh git base-devel curl fastfetch starship hyprland waybar brightnessctl pavucontrol nwg-displays kitty ttf-firacode-nerd dolphin xdg-desktop-portal-hyprland xdg-desktop-portal playerctl wofi hyprpaper blueman
+	sudo pacman -Syu --needed zsh git base-devel curl fastfetch starship hyprland waybar brightnessctl pavucontrol nwg-displays kitty ttf-firacode-nerd dolphin xdg-desktop-portal-hyprland xdg-desktop-portal playerctl wofi hyprpaper blueman nwg-look
 
 fi
 
