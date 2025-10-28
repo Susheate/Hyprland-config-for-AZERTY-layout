@@ -19,6 +19,9 @@ else
 
 fi
 
+
+echo -e "${bold}Configuring Dolphin${clear}"
+
 cp /etc/xdg/menus/*applications.menu ~/.config/menus/applications.menu
 
 
