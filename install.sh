@@ -23,7 +23,9 @@ fi
 echo -e "${bold}Configuring Dolphin${clear}"
 
 mkdir ~/.config/menus/
-cp -rf /etc/xdg/menus/*applications.menu ~/.config/menus/applications.menu
+cp /etc/xdg/menus/*applications.menu ~/.config/menus
+
+xdg-mime default /usr/share/applications/kitty.desktop terminal
 
 
 echo -e "${bold}Changing shell to Zsh${clear}"
