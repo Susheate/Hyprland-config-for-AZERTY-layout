@@ -36,7 +36,7 @@ echo -e "${bold}Copying fastfetch config${clear}"
 cp -rf fastfetch ~/.config
 
 
-echo -e "${bold}Copying hyprland.conf${clear}"
+echo -e "${bold}Copying hypr${clear}"
 
 cp -rf hypr ~/.config
 
