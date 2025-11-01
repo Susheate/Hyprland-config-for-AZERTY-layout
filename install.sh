@@ -38,9 +38,18 @@ echo -e "${bold}Copying fastfetch config${clear}"
 cp -rf fastfetch ~/.config
 
 
-echo -e "${bold}Copying hyprland.conf${clear}"
+echo -e "${bold}Copying hypr${clear}"
 
 cp -rf hypr ~/.config
+
+
+echo -e "${bold}Detecting and applying displays configuration${clear}"
+
+monitor=$(xrandr | grep "connected" | awk '{print $1}' | grep -v "WAYLAND-1")
+resolution=$(xrandr | grep '*' | awk '{print $1}' | sed -n '1p')
+refresh_rate=$(xrandr | grep '*' | awk '{print $2}' | sed -n '1p' | tr -d '*+')
+
+echo -e "monitor=$monitor,$resolution@$refresh_rate,0x0,1.0" > ~/.config/hypr/monitors.conf
 
 
 echo -e "${bold}Copying waybar config${clear}"
