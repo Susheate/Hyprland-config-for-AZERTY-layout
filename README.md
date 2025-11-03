@@ -1,11 +1,11 @@
-# Hyprland config for AZERTY/French layouts
+# Hyprland config for AZERTY layouts
 
 Work in progress, check the repo to run the install script again in order to keep your config updated
 
-A repository I originally made in order to backup and restore my Hyprland config easily, made for AZERTY/French keyboard users.
+A repository I originally made in order to backup and restore my Hyprland config easily, made for AZERTY keyboard users.
 
 It offers :
-- Keybindings made for AZERTY/French layouts
+- Keybindings made for AZERTY layouts
 - Zsh config (Oh My Zsh, Starship, autosuggestions)
 - Fastfetch config
 - Waybar config
