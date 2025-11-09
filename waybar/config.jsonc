@@ -12,8 +12,9 @@
   "modules-center": ["clock"],
 
   "modules-right": [
+  	"tray",
     "bluetooth",
-    "network",
+  //  "network",
     "pulseaudio", 
     "backlight",
     "battery"
@@ -33,7 +34,7 @@
     "format-off": "{icon}", 
     "format-connected":"{icon}",
     "format-icons":{
-        "on":"󰂯",
+        "on": "󰂯",
         "off": "󰂲",
         "connected": "󰂱",
         },
@@ -41,31 +42,31 @@
     "tooltip-format-connected":"{device_enumerate}"
   },
 
-  "custom/music": {
-    "format": "  {}",
-    "escape": true,
-    "interval": 5,
-    "tooltip": false,
-    "exec": "playerctl metadata --format='{{ artist }} - {{ title }}'",
-    "on-click": "playerctl play-pause",
-    "max-length": 50
-  },
+//  "custom/music": {
+//    "format": "  {}",
+//    "escape": true,
+//    "interval": 5,
+//    "tooltip": false,
+//    "exec": "playerctl metadata --format='{{ artist }} - {{ title }}'",
+//    "on-click": "playerctl play-pause",
+//    "max-length": 50
+//  },
 
   "clock": {
-    "timezone": "Europe/Paris",
     "tooltip": false,
     "format": "{:%H:%M:%S  -  %A, %d}",
     "interval": 1
   },
 
-  "network": {
-    "format-wifi": "󰤢",
-    "format-ethernet": "󰈀 ",
-    "format-disconnected": "󰤠 ",
-    "interval": 5,
-    "tooltip-format": "{essid} ({signalStrength}%)",
-    "on-click": "nm-connection-editor"
- },
+//  "network": {
+//    "format-wifi": "󰤢",
+//    "format-ethernet": "󰈀 ",
+//    "format-disconnected": "󰤠 ",
+//    "interval": 10,
+//    "tooltip-format": "{essid} ({signalStrength}%)",
+//    "on-click": "nm-connection-editor",
+//    "on-click-right": "nm-applet"
+//  },
 
   "cpu": {
     "interval": 1,
@@ -76,7 +77,7 @@
 
   "memory": {
     "interval": 1,
-    "format": "   {used:0.1f}G/{total:0.1f}G",
+    "format": "   {used:0.2f}G/{total:0.2f}G",
     "tooltip-format": "Memory"
   },
   
@@ -93,11 +94,12 @@
     "format-icons": {
       "default": ["", "", " "]
     },
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
+    "on-click-middle": "amixer sset 'Master' toggle"
   },
 
   "battery": {
-        "interval":2,
+        "interval": 1,
         "states": {
             // "good": 95,
             "warning": 30,
@@ -113,12 +115,5 @@
         "format-icons": ["", "", "", "", ""]
   },
   
-  "custom/lock": {
-  "tooltip": false,
-  "on-click": "sh -c '(sleep 0s; hyprlock)' & disown",
-  "format" : ""
-  }
-
 
 }
-

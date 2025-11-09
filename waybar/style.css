@@ -95,27 +95,12 @@
   background-color: rgb(41, 42, 53); /* Brighter highlight */
 }
 
-#custom-pomodoro {
-    background-color: #1a1b26; /* Consistent dark background */
-    padding: 0.3rem 0.7rem; /* Consistent padding with other modules (e.g., cpu, uptime) */
-    margin: 5px 0px; /* 5px top/bottom margin, 0px left/right (base for individual control) */
-    border-radius: 6px; /* Consistent rounded corners with other individual modules */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Consistent shadow */
-    min-width: 0;
-    border: none;
-    outline: none; /* Ensure no default outline */
-    /* Transition for background-color, color, outline, and box-shadow for smooth effect */
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, outline 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    color: #babbf1; /* A calm color, consistent with custom-uptime */
-    font-weight: 600; /* Slightly bolder for the timer, consistent with clock */
-}
-
 /* --- Right Modules (Single, Seamless Bar ) --- */
+#tray,
 #bluetooth,
 #pulseaudio,
 #backlight,
 #network,
-#custom-lock,
 #battery {
   background-color: #000000;
   padding: 0.3rem 0.7rem;
@@ -127,19 +112,18 @@
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+#tray:hover,
 #bluetooth:hover,
 #pulseaudio:hover,
 #backlight:hover,
 #network:hover,
-#custom-lock:hover,
 #battery:hover {
   background-color: rgb(41, 42, 53);
 }
 
-#bluetooth {
-  margin-left: 0px; 
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
+#tray {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
 }
 
 #battery {
@@ -172,37 +156,27 @@
   color: #ffffff;
 }
 
-#custom-lock {
-  color: #ffffff;
-}
 #bluetooth {
   color: #ffffff;
   font-size: 16px;
 }
+
 #bluetooth.on {
   color: #ffffff;
 }
+
 #bluetooth.connected {
   color: #ffffff;
 }
+
 #battery {
   color: #ffffff;;
 }
+
 #battery.charging {
   color: #ffffff;
 }
+
 #battery.warning:not(.charging) {
   color: #ffffff;
-}
-
-/* --- Tooltip Styles --- */
-tooltip {
-  background-color: #1a1b26;
-  color: #dddddd;
-  padding: 5px 12px;
-  margin: 5px 0px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  font-size: 12px;
 }
