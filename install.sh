@@ -27,6 +27,11 @@ if [[ ! -d "$HOME/.config/menus/" ]]; then
 
 fi
 
+if [[ -d /etc/xdg/menus/arch-applications.menu ]]; then
+	sudo mv /etc/xdg/menus/arch-applications.menu /etc/xdg/menus/applications.menu
+
+fi
+
 cp /etc/xdg/menus/*applications.menu ~/.config/menus
 
 xdg-mime default /usr/share/applications/kitty.desktop terminal
@@ -54,6 +59,8 @@ resolution=$(xrandr | grep '*' | awk '{print $1}' | sed -n '1p')
 refresh_rate=$(xrandr | grep '*' | awk '{print $2}' | sed -n '1p' | tr -d '*+')
 
 echo -e "monitor=$monitor,$resolution@$refresh_rate,0x0,1.0" > ~/.config/hypr/monitors.conf
+
+hyprctl reload
 
 
 echo -e "${bold}Copying waybar config${clear}"
