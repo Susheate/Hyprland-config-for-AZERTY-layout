@@ -28,6 +28,12 @@
 	}
   },
 
+  "tray": {
+  	"expand": true,
+  	"spacing": 10,
+  	"reverse-direction": true
+  },
+
   "bluetooth": {
     "format": "󰂲",
     "format-on": "{icon}",
