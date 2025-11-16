@@ -4,9 +4,9 @@
   "margin-bottom": -10,
   "spacing" : 0,
   "modules-left": [
-  "hyprland/workspaces",
-  "cpu",
-  "memory"
+  "hyprland/workspaces"
+//  "cpu",
+//  "memory"
   ],
 
   "modules-center": ["clock"],
@@ -21,11 +21,11 @@
   ],
 
   "hyprland/workspaces": {
-    "format": "{name}: {icon}",
-    "format-icons": {
-      "active": "",
-      "default": ""
-    }
+  	"format": "{name}  {icon}",
+	"format-icons": {
+		"active": "",
+		"default": ""
+	}
   },
 
   "bluetooth": {
@@ -84,7 +84,6 @@
   "backlight": {
         "format": "{icon}  {percent}%",
         "format-icons": ["","󰃜", "󰃛", "󰃞","󰃝","󰃟","󰃠"],
-        "tooltip": false,
         "on-click": "nwg-displays"
   },
   
