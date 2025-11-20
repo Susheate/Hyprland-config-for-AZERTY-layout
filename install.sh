@@ -54,9 +54,9 @@ cp -rf hypr ~/.config
 
 echo -e "${bold}Detecting and applying displays configuration${clear}"
 
-monitor=$(xrandr | grep "connected" | awk '{print $1}' | grep -v "WAYLAND-1")
-resolution=$(xrandr | grep '*' | awk '{print $1}' | sed -n '1p')
-refresh_rate=$(xrandr | grep '*' | awk '{print $2}' | sed -n '1p' | tr -d '*+')
+monitor=$(xrandr --current | grep 'connected' | cut -d ' ' -f 1)
+resolution=$(xrandr --current | grep 'connected' | cut -d ' ' -f 3 | cut -d '+' -f 1)
+refresh_rate=$(xrandr --current | grep "  $resolution" | cut -d ' ' -f 8 | tr -d '*+')
 
 echo -e "monitor=$monitor,$resolution@$refresh_rate,0x0,1.0" > ~/.config/hypr/monitors.conf
 
