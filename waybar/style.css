@@ -98,7 +98,7 @@
 /* --- Right Modules (Single, Seamless Bar ) --- */
 #tray,
 #bluetooth,
-#pulseaudio,
+#wireplumber,
 #backlight,
 #network,
 #battery {
@@ -114,7 +114,7 @@
 
 #tray:hover,
 #bluetooth:hover,
-#pulseaudio:hover,
+#wireplumber:hover,
 #backlight:hover,
 #network:hover,
 #battery:hover {
@@ -141,7 +141,7 @@
   font-weight: 500;
 }
 
-#pulseaudio {
+#wireplumber {
   color: #ffffff;
 }
 #backlight {

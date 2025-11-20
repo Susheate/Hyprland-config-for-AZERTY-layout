@@ -15,7 +15,7 @@
   	"tray",
     "bluetooth",
   //  "network",
-    "pulseaudio", 
+    "wireplumber", 
     "backlight",
     "battery"
   ],
@@ -93,7 +93,7 @@
         "on-click": "nwg-displays"
   },
   
-  "pulseaudio": {
+  "wireplumber": {
     "format": "{icon}  {volume}%",
     "format-muted": "",
     "format-icons": {
@@ -104,7 +104,7 @@
   },
 
   "battery": {
-        "interval": 1,
+        "interval": 60,
         "states": {
             // "good": 95,
             "warning": 30,
