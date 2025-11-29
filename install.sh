@@ -56,7 +56,7 @@ echo -e "${bold}Detecting and applying displays configuration${clear}"
 
 monitor=$(xrandr --current | grep 'connected' | cut -d ' ' -f 1)
 resolution=$(xrandr --current | grep 'connected' | cut -d ' ' -f 3 | cut -d '+' -f 1)
-refresh_rate=$(xrandr --current | grep "  $resolution" | cut -d ' ' -f 8 | tr -d '*+')
+refresh_rate=$(xrandr --current | grep "  1920x1080" | awk '{print $2}' | tr -d '*+')
 
 echo -e "monitor=$monitor,$resolution@$refresh_rate,0x0,1.0" > ~/.config/hypr/monitors.conf
 
