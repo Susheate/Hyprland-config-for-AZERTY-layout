@@ -38,6 +38,14 @@
       "format": "{2}"
     },
     {
+      "type": "de",
+      "key": "  DE"
+    },
+    {
+      "type": "wm",
+      "key": "  WM"
+    },
+    {
       "type": "packages",
       "key": "  Packages"
     },
@@ -50,22 +58,14 @@
       "type": "terminalfont",
       "key": "  Terminal Font"
     },
-    {
-      "type": "display",
-      "key": "  Display",
-      "format": "{1}x{2} {3}Hz [{7}]"
-    },
-    {
+	{
       "type": "terminal",
       "key": "  Terminal"
     },
     {
-      "type": "de",
-      "key": "  DE"
-    },
-    {
-      "type": "wm",
-      "key": "  WM"
+      "type": "display",
+      "key": "  Display",
+      "format": "{1}x{2} {3}Hz [{7}]"
     },
     {
       "type": "cpu",
@@ -83,6 +83,10 @@
     {
       "type": "memory",
       "key": "  Memory "
+    },
+    {
+      "type": "swap",
+      "key": "  Swap"
     },
     {
       "type": "disk",
