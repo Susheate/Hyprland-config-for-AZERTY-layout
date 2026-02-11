@@ -16,9 +16,8 @@
       "format": "┌──────────────────────────────────────────┐"
     },
     {
-      "type": "chassis",
-      "key": "  Chassis",
-      "format": "{1} {2} {3}"
+      "type": "host",
+      "key": "  Host"
     },
     {
       "type": "os",
