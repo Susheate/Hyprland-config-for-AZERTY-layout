@@ -95,7 +95,7 @@ makepkg -si --needed
 
 echo -e "${bold}Installing AUR packages, check PKGBUILDs${clear}"
 
-yay -S --needed zen-browser-bin
+yay -S --needed librewolf-bin
 
 
 echo -e "${bold}Installation complete${clear}"
