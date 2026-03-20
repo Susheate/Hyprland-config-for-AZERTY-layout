@@ -34,7 +34,8 @@ fi
 
 cp /etc/xdg/menus/*applications.menu ~/.config/menus
 
-xdg-mime default /usr/share/applications/kitty.desktop terminal
+#needs to be changed
+#xdg-mime default /usr/share/applications/kitty.desktop terminal
 
 
 echo -e "${bold}Changing shell to Zsh${clear}"
